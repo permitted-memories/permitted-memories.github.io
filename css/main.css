@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700&display=swap");
+:root {
+  --background-color: #666666;
+  --navbar-color: #838383;
+  --text-dark: #0c000c;
+  --text-white: whitesmoke;
+  --text-colorful: #ffcc1c;
+}
+
+body {
+  background: var(--background-color);
+  margin: 0;
+  font-family: 'Poppins';
+}
+
+.navbar {
+  background: var(--navbar-color);
+  padding: 1em;
+  -webkit-box-shadow: 3px 5px 15px var(--text-dark);
+          box-shadow: 3px 5px 15px var(--text-dark);
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+a {
+  color: var(--text-dark);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 0em 15%;
+}
+
+.mainbutton {
+  height: 6.66em;
+  display: flex;
+  align-items: center;
+  justify-content: center 
+}
+
+.hero .container {
+  background: white;
+  -webkit-box-shadow: 3px 0px 10px var(--text-dark), -3px 0px 10px var(--text-dark);
+          box-shadow: 3px 0px 10px var(--text-dark), -3px 0px 10px var(--text-dark);
+}
+
+img {
+  padding-top: 1em;
+  width: fixed;
+}
+
+.main-col {
+  width: 100%;
+}
+
+.main-col .subhead {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--navbar-color);
+  letter-spacing: .05em;
+  margin-top: 0;
+  margin-left: 16px;
+  margin-bottom: 0;
+}
+
+.main-col h1 {
+  font-size: 2.5em;
+  line-height: 1.3em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.main-col .text-body {
+  margin: 0 1em;
+  padding: 1em;
+  text-align: justify;
+}
+
+.main-col .game-cta {
+  background: var(--text-colorful);
+  color: white;
+  text-decoration: none;
+  padding: .6em;
+  font-size: 1.4em;
+  border-radius: 5em;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.main-col .game-cta:hover {
+  background: whitesmoke;
+  color: var(--text-colorful);
+}
+
+.main-col .faq-cta {
+  display: block;
+  margin-top: 1em;
+}
+
+section.filler {
+  text-align: center;
+  position:fixed;
+  width:99.1%;
+  bottom:0;
+  color: var(--background-color);
+  background: var(--navbar-color);
+  display: block;
+  padding: 0.3em;
+}
+
+nav ul.primary-nav {
+  margin-top: 3.5em;
+}
+
+nav li a {
+  color: var(--background-color);
+  text-decoration: none;
+  display: block;
+  font-size: 1.3em;
+  text-align: right;
+}
+
+nav li a:hover {
+  font-weight: bold;
+}
+
+button, .send-message-cta {
+  padding: 10px;
+  font-weight: bold;
+  background-color: var(--text-colorful);
+}
+
+.send-message-cta {
+  width: 25%;
+}
+
+img {
+  max-width:95%;
+  max-height:100%;
+}
+
+label {
+  display: block;
+  font-size: 1.2em;
+}
+
+.form-group{
+  max-width:95%;
+  max-height:100%;
+}
+
+@media only screen and (min-width: 1px) {
+  .navbar .container {
+    display: -ms-grid;
+    display: flex;
+    -ms-grid-columns: 300px auto;
+        grid-template-columns: 300px auto;
+  }
+  .navbar nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+  .navbar nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar nav a {
+    color: var(--text-dark);
+    font-size: 1em;
+    padding: .1em 1em;
+  }
+  .navbar nav ul.primary-nav {
+    margin: 0;
+  }
+  .navbar nav li.current a {
+    font-weight: bold;
+  }
+  .navbar nav li.play-the-game a {
+    color: var(--text-colorful);
+    border: 3px solid var(--text-colorful);
+    font-weight: bold;
+    border-radius: 5em;
+    margin-top: -.2em;
+  }
+  .navbar nav li.play-the-game a:hover {
+    background: var(--text-colorful);
+    color: var(--text-dark);
+  }
+  .hero .container {
+    padding-top: 1em;
+    padding-bottom: 1.5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: center;
+  }
+  .left-col {
+    padding: 8em 1em 1em;
+  }
+}
+/*# sourceMappingURL=main.css.map */

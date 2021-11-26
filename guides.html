@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YGO Permitted Memories</title>
+    <meta name="description" content="A fan project to revitalize the Forbidden Memories gameplay with a newer Yu-Gi-Oh set of cards. Completely made from scratch, not a remake or remaster!">
+    <meta name="keywords" content="yugioh yu-gi-oh forbidden memories ps1 game godot unity gamemaker cardgame android pc fangame programming ">
+    <link rel="shortcut icon" href="https://i.imgur.com/uRd9NrC.png">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="container">
+            <nav>
+                <ul class="primary-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="current"><a href="guides.html">Guides</a></li>
+                </ul>
+
+                <ul class="secondary-nav">
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="play-the-game"><a href="play.html">Play the Game</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </div>
+    
+    <br>
+
+    <section class="hero">
+        <div class="container">
+            <div class="main-col">
+                <p class="subhead" align="left" style="color:red">FUSIONS</p>
+                <p class="text-body">Fusion Summoning in this game works basically the same as in the original Yu-Gi-Oh! Forbidden Memories. You're supposed to fuse cards based on their type (i.e. Dragon, Warrior, Spellcaster, etc) and expect a resulting Fusion Monster that "combines" those types into something that makes sense.
+                <br><br>There are also "Specific Fusions" following the original Yu-Gi-Oh TCG fusions and "archetype" fusions, allowing weaker archetype monsters to turn into the archetype boss. <span style="color: red"; font-weight:bold >These will not be listed bellow.</span>
+                <br>Some monsters have extra types based on their artwork/lore. <span style="color: red"; font-weight:bold >These will not be listed bellow.</span></p>
+
+                <div>
+                    <button onclick="show_hide_fusion_spoiler()">Show list of Basic Fusions</button>
+                </div>
+                
+                <img id="fusion-spoiler" src="images/fusion-table.png">
+            </div>
+
+        </div>
+    </section>
+
+    <br>
+
+    <section class="hero">
+        <div class="container">
+            <div class="main-col">
+                <p class="subhead" align="left" style="color:red">CARD DROPS</p>
+                <p class="text-body">The card drops are way more straightforward than in the original Yu-Gi-Oh! Forbidden Memories. Anything that makes sense character-wise is in the pool for that character. If you see an NPC using the card, that card can be dropped.
+                <br><br><span style="color: red"; font-weight:bold >Three (3) cards are given when you win a duel.</span> These cards are based on the results of your duel. The more Stars you get, the better those cards can be. The conditions to achieve better duel results will remain secret, but if you know how to A/S Pow/Tec in Forbidden Memories you'll be fine.</p>
+
+                <div>
+                    <button onclick="show_hide_drops_spoiler()">Show list of Drop Pools</button>
+                </div>
+                
+                <img id="drop-spoiler" src="images/game-screen.png">
+            </div>
+
+        </div>
+    </section>
+    
+    <br>
+    <br>
+    
+    <section class="filler">
+        <div class="bottom-message">
+            <span style="color: whitesmoke"; font-weight:bold >This is just a fan game. Not affiliated with Yu-Gi-Oh! Trademark or any other company. <a style="color: #ffcc1c" href="https://twitter.com/QualquerRafa">My Twitter</a></span>
+        </div>
+    </section>
+
+    <script>
+        var a = 1; b = 1;
+        document.getElementById("fusion-spoiler").style.display="none";
+        document.getElementById("drop-spoiler").style.display="none";
+
+        function show_hide_fusion_spoiler(){
+            if(a==1){
+              document.getElementById("fusion-spoiler").style.display="inline";
+              return a=0;
+              
+            }else{
+              document.getElementById("fusion-spoiler").style.display="none";
+              return a=1;
+  
+            }
+        }
+        function show_hide_drops_spoiler(){
+            if(b==1){
+              document.getElementById("drop-spoiler").style.display="inline";
+              return b=0;
+              
+            }else{
+              document.getElementById("drop-spoiler").style.display="none";
+              return b=1;
+  
+            }
+        }
+      </script>
+
+
+</body>
+
+</html>
