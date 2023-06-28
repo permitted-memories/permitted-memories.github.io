@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700&display=swap');
+
+:root {
+    --text-dark: #0c000c;
+    --text-clear: #ececec;
+}
+
+/*---------------------------------------------------------------------------------------*/
+header{
+    background-image: url('../img/bg_light.png');
+    padding: 1em;
+    font-size: 20px;
+
+    display: flex;
+    place-content: space-between;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    border-bottom: 2px solid whitesmoke;
+}
+.left{
+    display: flex;
+}
+.right{
+    display: flex;
+}
+.main-buttons{
+    display: inherit;
+    place-content: end;
+    padding-right: 1em;
+}
+.secondary-buttons {
+    padding-right: 2.5em;
+}
+a {
+    color: gold;
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+/*---------------------------------------------------------------------------------------*/
+footer {
+    background-image: url('../img/bg_light.png');
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0.3em;
+    text-align: center;
+    color: whitesmoke;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 2px solid whitesmoke;
+}
+
+/*---------------------------------------------------------------------------------------*/
+body {
+    background-image: url('../img/bg.png');
+    margin: 0; 
+    font-family: 'Poppins';
+    text-align: center;
+    color: var(--text-clear);
+    padding-top: 5.5em;
+}
+
+.main-body-info {
+    padding-top: 0.5em;
+    padding-bottom: 4em;
+    min-inline-size: 1000px;
+    max-inline-size: 1920px;
+
+    margin: auto;
+    width: 50%;
+}
+
+.post-box {
+    background-color: whitesmoke;
+    color: black;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+.main-text {
+    padding-top: 0.5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+.text-link{
+    color: goldenrod;
+}
+
+/*---------------------------------------------------------------------------------------*/
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+  
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: goldenrod;
+    color: white;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+  /* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: rgb(197, 124, 15);
+}
+
+
+
+/*------ PARADINHAS DO GOOGLE TRANSLATE -------------*/
+body{
+    top: 0px !important; 
+    position: static !important; 
+    }
