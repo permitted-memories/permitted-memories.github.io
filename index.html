@@ -22,49 +22,103 @@
     <!-- The update boxes go bellow here -->
     <section class="main-body-info">
     
-        <div class="post-box">
-            <div class="date" align="left" style="color: red">July 02, 2023 <a style="color: black; font-weight: bold;">- Update 0.1.010 </a></div>
-            <hr>
-            <div class="main-text" align="justify" style="color: black">
-                And here we have the first minor patch to fix everything reported in the first day of testing! Nothing really game breaking, just minor annoyances really.<br>
-                Any cosmetic or convenience improvements will come in the next big update. Thanks for the suggestions!<br>
-                <br>
-                <a class="text-link" href="download.html">Go to the Download Page and get Version 0.1.010</a> right now!
-                <br>
-                <br>
-                <b>To update the game, just delete the old version and play using the new one.<br>
-                Your savefile is stored somewhere else, you will not lose anything.</b>
-                <br>
-                <br>
-                <button onclick="openPatch01010()">Click here to see v0.1.010 Patch Notes</button>
+    <div class="post-box">
+        <div class="date" align="left" style="color: red">07 de Julho de 2023 <a style="color: black; font-weight: bold;">- Atualização 0.1.020 </a></div>
+        <hr>
+        <div class="main-text" align="justify" style="color: black">
+            Primeiro de tudo: Obrigado a todos que estão reportando os Bugs direitinho pela <a class="text-link" href="contact.html">Página de Contato</a>.<br>
+            <br>
+            <b>TODOS</b> os bugs que foram reportados já foram resolvidos. Não significa que novos não aparecerão, mas se você enviou algo e isso realmente era um Bug, já foi corrigido. Clique no botão no final desse post caso queira conferir o que mudou.
+            <br>
+            Dito isso, muita gente enviou também sugestões para o jogo, e muitas delas realmente foram boas ideias!<br>
+            Por enquanto minha preocupação principal é ter o jogo rodando sem nenhum problema que prejudique o jogador, então <i>coisas novas</i> vão ser implementadas bem aos poucos. 
+            <br>
 
-                <div id="Patch01010" style="display: none">
-                    - FIXED: Bug that allowed the player to use the same Equip Spell multiple times or even in more than one monster during the animation.<br>
-                    - FIXED: Problem that would stop the Duel if the NPC used "Mage Power" without a target monster.<br>
-                    - FIXED: Cyber-Stein crashing the Game when transforming into a Normal Monster.<br>
-                    - FIXED: Some issues related to the Music playing twice, overlapping or not playing at all.<br>
-                    - FIXED: Improved the checks for Winning via Deck Out or Burn Effects.<br>
-                    - And a couple of improvements on the database, general game performance and card effect descriptions.
-                </div>
+            <br>
+            <a style="color: teal; font-weight: bold">Ainda assim, versão 0.1.020 traz três novidades bem importantes:</a><br>
+            <div style="padding-left: 1.5em;"> 
+               1 - Um histórico das fusões realizadas no duelo;<br>
+               2 - Botões para acelerar os Free Duels ou Desistir deles;<br>
+               3- O Rank de Recompensa dos Duelos foi retrabalhado. Atingir <a style="color: goldenrod">Rank S</a> deve fazer mais sentido agora.<br>
+               <br> 
+               <center>
+                <img src="img\v0.1.020\side_menu.png" alt="fusion history" height="240px"> 
+                <img src="img\v0.1.020\rank_S.png" alt="Rank S" height="240px">
+               </center>
+            </div>
+            <br>
+
+            <a class="text-link" href="download.html">Clique para ir à Página de Downloads e baixar a Versão 0.1.020!</a>
+            <br>
+
+            <br>
+            <b>Pra atualizar o jogo é só deletar a versão anterior e abrir por essa nova.<br>
+            Seu Savefile é guardado em outro lugar, você não vai perder nenhum progresso.</b>
+            <br>
+
+            <br>
+            <button onclick="openPatch('Patch01020')">Clique para detalhes da Atualização 0.1.020</button>
+
+            <div id="Patch01020" style="display: none">
+                - Monstros com efeitos "Ao Atacar" não são mais ativados múltiplas vezes com múltiplos cliques<br>
+                - Adicionada a descrição de alguns Efeitos de Monstros que estavam faltando<br>
+                - Armadilhas como resultado de fusão não irão ser ativadas sem alvo e crashar o jogo<br>
+                - Removidas TODAS as possibilidades do jogador ativar seus próprios efeitos de Flip<br>
+                - Corrigido o timming das ativações de efeitos "Ao ser Destruído" de alguns Monstros de Ritual<br>
+                - A inteligencia dos NPCs foi melhorada para: Monstros que custam LP ao atacar, Interação com Tokens invocados no meio da batalha, Monstros imunes a destruição, entre outros detalhes menores<br>
+                - E mais alguns outros bugzinhos super específicos dificeis de descrever...
 
             </div>
+
         </div>
-    
-        <br>
+    </div>
+
+    <br>
+
+
+    <div class="post-box">
+        <div class="date" align="left" style="color: red">02 de Julho de 2023 <a style="color: black; font-weight: bold;">- Atualização 0.1.010 </a></div>
+        <hr>
+        <div class="main-text" align="justify" style="color: black">
+            E aqui temos nosso primeiro pequeno Patch para corrigir tudo que foi reportado no primeiro dia de testes!<br>
+            Todas as sugestões cosméticas ou de conveniência que foram aceitas virão em updates futuros. Obrigado pelas ideias!<br>
+            <br>
+            <a class="text-link" href="download.html">Clique para ir à Página de Downloads e baixar a Versão 0.1.010!</a>
+            <br>
+            <br>
+            <b>Pra atualizar o jogo é só deletar a versão anterior e abrir por essa nova.<br>
+            Seu Savefile é guardado em outro lugar, você não vai perder nenhum progresso.</b>
+            <br>
+            <br>
+            <button onclick="openPatch('Patch01010')">Clique para detalhes da Atualização 0.1.010</button>
+
+            <div id="Patch01010" style="display: none">
+                - Corrigido Bug que permitia o jogador usar o mesmo Equipamento múltiplas vezes ou em mais de um monstro ao mesmo tempo<br>
+                - Corrigido problema que interromperia o duelo se o NPC usasse a "Mage Power" sem um alvo<br>
+                - Corrigido o crash do Cyber-Stein quando ele se transforma em um monstro sem efeito<br>
+                - Corrigidos alguns problemas com a música tocando duplicada ou nem tocando<br>
+                - Melhoradas as checagens de ganhar o duelo por Deck Out ou efeitos de Burn<br>
+                - E algumas coisas no Banco de Dados, na performance do jogo e descrição de cartas<br>
+            </div>
+
+        </div>
+    </div>
+
+    <br>
     
     
     <div class="post-box">
-        <div class="date" align="left" style="color: red">July 01, 2023 <a style="color: black; font-weight: bold;">- Version 0.1.000 Release!</a></div>
+        <div class="date" align="left" style="color: red">01 de Julho de 2023 <a style="color: black; font-weight: bold;">- Lançamento da Versão 0.1.000!</a></div>
         <hr>
         <div class="main-text" align="justify" style="color: black">
-        After about 2 years in the making (with a veeeeery bad demo released back in December 2021) I'm happy to finally release a version of this game that I can be proud of!<br>
+        Depois de uns 2 anos em produção (com uma Demo beeeeem ruim lançada em Dezembro de 2021) eu finalmente estou lançando uma versão desse jogo da qual posso me orgulhar!<br>
         <br>
-        You can <a class="text-link" href="download.html">click here to download Version 0.1.000</a> right now and give it a try!
+        Você pode <a class="text-link" href="download.html">clicar aqui pra baixar a Versão 0.1.000</a> e testar o jogo!
         <br>
         <br>
-        <a style="color: red; font-weight: bold;">THIS IS A BETA TESTING VERSION. Expect things to break!</a>
+        <a style="color: red; font-weight: bold;">ESSA É UMA VERSÃO BETA DO JOGO. As coisas vão quebrar!</a>
         <br>
-        Please report all bugs and eventual errors you might find <a class="text-link" href="contact.html">at this page.</a>
+        Então por favor reporte todos os bugs e erros que você encontrar <a class="text-link" href="contact.html">por meio dessa página.</a>
         <br>
         <br>
         
@@ -74,25 +128,25 @@
             <img src="img\v0.1.000\deck_building.png" alt="free duel screen" height="120px">
             <img src="img\v0.1.000\duel.png" alt="free duel screen" height="120px"> 
             <br>
-            <i style="font-size: 12px;">Game available in English and Brazilian Portuguese.</i>
+            <i style="font-size: 12px;">Jogo disponível em Inglês e Português Brasileiro.</i>
         </center>
 
         <br>
-        <b>What is in this Version:</b><br>
-        <a style="color: teal;">- Basically everything is already working as intended for the final release.<br>
+        <b>O que temos nessa Versão:</b><br>
+        <a style="color: teal;">- Basicamente tudo já funciona mais ou menos como na versão final.<br>
         </a>
-        <div style="padding-left: 2em;"> Even though you won't be able to play the Main Campaign (I'm really hyped about the plot I've written, but it's not ready yet), Tournament Mode and Free Duels are completely functional. All the characters found in Chapter 1 of the Campaign are unlocked by default and you can farm them as much as you want lol.
+        <div style="padding-left: 2em;"> Mesmo que o Modo Campanha não esteja disponível (e eu tô muito animado com a história que to desenvolvendo, mas ainda falta bastante coisa), o Modo de Torneio e os Duelos Livres estão funcionando 100%. Todos os personagens do Capítulo 1 da Campanha estão desbloqueados por padrão e você pode farmá-los o quanto quiser.
         </div>
         
-        <a style="color: teal;">- GX and 5D's planned characters are locked in this version.
+        <a style="color: teal;">- Personagens do GX e 5D's estão bloqueados nessa versão.
         </a>
-        <div style="padding-left: 2em;"> So you won't be able to fight them and drop their cards. You can still buy some of those with their Passwords at the Card Shop and use them if you want.
+        <div style="padding-left: 2em;"> Então você não vai poder duelar contra eles ainda, mas pode conseguir algumas das cartas deles usando os Códigos na Loja de Cartas se você quiser.
         </div>
         <br>
-        And here is a little Gift to celebrate this big moment! The Password for my Favourite Yu-Gi-Oh! Card ever released.<br>
+        E aqui vai um presentinho pra celebrar esse grande momento! O Código pra minha carta Favorita de Yu-Gi-Oh!.<br>
         
-        <b>Special Code for this Release: </b> 04148264<br>
-        Use this code to get a <a style="color: teal">Shiny Black "C" Squadder</a> for free at the in-game Card Shop.
+        <b>Código pra Loja de Cartas: </b> 04148264<br>
+        Use esse código para ganhar um <a style="color: teal">Shiny Black "C" Squadder</a> de graça no jogo!
         </div>
     </div>
 
@@ -106,7 +160,7 @@
     <div class="left">
         <div class="btn1">
             <ul class="main-buttons">
-                <li><a style="color: white; font-weight: bold;" href="index.html">Home</a></li>
+                <li><a style="color: white; font-weight: bold;" href="index.html">Início</a></li>
             </ul>
         </div>
         <div class="btn2">
@@ -114,35 +168,30 @@
                 <li><a href="download.html">Download</a></li>
             </ul>
         </div>
-        <div class="btn3">
-            <ul class="main-buttons">
-                <li><a href="faq.html">FAQ</a></li>
-            </ul>
-        </div>
     </div>
 
     <div class="right">
         <div class="btn4">
             <ul class="main-buttons">
-                <li><a href="onlineplay.html">Play Browser Version (BETA)</a></li>
+                <li><a href="onlineplay.html">Versão de Navegador (BETA)</a></li>
             </ul>
         </div>
         <ul class="secondary-buttons">
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html">Contato</a></li>
         </ul>
     </div>
 </header>
 
 <footer>
     <div class="bottom-message">
-        This is just a fan game. Not affiliated with Yu-Gi-Oh! Trademark or any other company.
+        Esse jogo é apenas um projeto de Fã. Sem ligações com as marcas de Yu-Gi-Oh! ou qualquer outra empresa.
     </div>
 
     <div class="middle">
         <div id="google_translate_element"></div>
         <script type="text/javascript">
             function googleTranslateElementInit() {
-                new google.translate.TranslateElement({pageLanguage: 'en', 
+                new google.translate.TranslateElement({pageLanguage: 'pt', 
                 layout:     google.translate.TranslateElement.InlineLayout.SIMPLE,
                 autoDisplay: false, 
                 includedLanguages: ''}, 'google_translate_element');}
@@ -152,8 +201,8 @@
 
     <!-- Junk javascript, move it to it's own file later. Hello curious Dev =) -->
     <script>
-        function openPatch01010() {
-            var x = document.getElementById("Patch01010");
+        function openPatch(pass_document_id) {
+            var x = document.getElementById(pass_document_id);
             if (x.style.display === "none") {
                 x.style.display = "block";
             } else {
