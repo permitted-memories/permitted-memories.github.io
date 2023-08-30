@@ -102,6 +102,11 @@ body {
     color: goldenrod;
 }
 
+table, th, td {
+    border:1px solid black;
+    text-align: center;
+}
+
 /*---------------------------------------------------------------------------------------*/
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
