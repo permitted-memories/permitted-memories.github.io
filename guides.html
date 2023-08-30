@@ -618,6 +618,184 @@
         </div>
         <br>
 
+        <div class="post-box">
+            <div class="date" align="left" style="color: orangered; font-weight: bold;">DROP DOS DUELOS</div>
+            <hr>
+
+            <div class="main-text" align="justify" style="color: black">
+                Baseado nas <b>ações durante o duelo</b> o jogador recebe uma pontuação para cada categoria abaixo, dependendo de qual condição dentro dela for preenchida.
+                <br>
+
+                <center>
+                <table id="duel-points" style="width: 90%;">
+                    <tr style="background-color: #8a948c;">
+                        <th><b>PONTUAÇÃO</b></th>
+                        <th><b>Deck Final</b></th>
+                        <th><b>Fusões</b></th>
+                        <th><b>Efeitos</b></th>
+                        <th><b>Magias/Armadilhas</b></th>
+                        <th><b>Turnos</b></th>
+                        <th><b>LP</b></th>
+                        <th><b>ATK em Campo</b></th>
+                    </tr>
+
+                    <tr style="background-color: #e3dede;">
+                        <td style="color: #e6c95d; font-weight: bold; text-shadow: 1px 1px 1px black;">4 Pontos</td>
+                        <td>32-40</td>
+                        <td>11+</td>
+                        <td>9+</td>
+                        <td>9+</td>
+                        <td>0-2</td>
+                        <td>-</td>
+                        <td>9000+</td>
+                    </tr>
+
+                    <tr style="background-color: #cccccc;">
+                        <td style="color: #ff3434; font-weight: bold; text-shadow: 1px 1px 1px black;">3 Pontos</td>
+                        <td>27-31</td>
+                        <td>8-10</td>
+                        <td>6-8</td>
+                        <td>6-8</td>
+                        <td>3-4</td>
+                        <td>8000+</td>
+                        <td>5500-8999</td>
+                    </tr>
+
+                    <tr style="background-color: #e3dede;">
+                        <td style="color: #b427d6; font-weight: bold; text-shadow: 1px 1px 1px black;">2 Pontos</td>
+                        <td>16-26</td>
+                        <td>4-7</td>
+                        <td>3-5</td>
+                        <td>3-5</td>
+                        <td>5-6</td>
+                        <td>6000-7999</td>
+                        <td>4500-5499</td>
+                    </tr>
+
+                    <tr style="background-color: #cccccc;">
+                        <td style="color: #2a7ade; font-weight: bold; text-shadow: 1px 1px 1px black;">1 Ponto</td>
+                        <td>0-15</td>
+                        <td>0-3</td>
+                        <td>0-2</td>
+                        <td>0-2</td>
+                        <td>7+</td>
+                        <td>4000-5999</td>
+                        <td>-</td>
+                    </tr>
+
+                </table>
+                </center>
+                
+                <br>
+                
+                O <b>Rank do Duelo</b> é determinado a partir da soma total dos pontos da etapa anterior. E cada Rank traz possibilidades e probabilidades diferentes de cartas que podem ser dropadas.
+                <br>
+                <center>
+                <table id="RANK" style="width: 90%;">
+                    <tr style="background-color: #8a948c;">
+                        <td style="width: 60px;"><b>RANK</b></td>
+                        <td style="width: 120px;"><b>PONTOS TOTAIS</b></td>
+                        <td><b>DROP 1</b></td>
+                        <td colspan="2"><b>DROP 2</b></td>
+                        <td colspan="2"><b>DROP 3</b></td>
+                    </tr>
+
+                    <tr style="background-color: #e3dede;">
+                        <td style="color: #e6c95d; font-weight: bold; text-shadow: 1px 1px 1.5px black;">S</td>
+                        <td>16+</td>
+                        <td style="width: 120px;">Geral + C + R</td>
+                        <td style="width: 90px;">20% R</td> <td style="width: 90px;">80% R + SR</td>
+                        <td style="width: 110px;">20% R + 2xSR</td> <td style="width: 110px;">80% SR + UR</td>
+                    </tr>
+
+                    <tr style="background-color: #cccccc;">
+                        <td style="color: #ff3434; font-weight: bold; text-shadow: 1px 1px 1.5px black;">A</td>
+                        <td>13-15</td>
+                        <td>Geral + C</td>
+                        <td colspan="2">C + R</td>
+                        <td>20% R</td><td>80% SR</td>
+                    </tr>
+
+                    <tr style="background-color: #e3dede;">
+                        <td style="color: #b427d6; font-weight: bold; text-shadow: 1px 1px 1.5px black;">B</td>
+                        <td>10-12</td>
+                        <td>Geral + C</td>
+                        <td colspan="2">C + R</td>
+                        <td colspan="2">C + R</td>	
+                    </tr>
+
+                    <tr style="background-color: #cccccc;">
+                        <td><a style="color: #2a7ade; font-weight: bold; text-shadow: 1px 1px 1.5px black;">C</a>, <a style="color: #31c437; font-weight: bold; text-shadow: 1px 1px 1.5px black;">D</a></td>
+                        <td>5-9</td>
+                        <td>Geral + C</td>
+                        <td colspan="2">Geral + C + R</td>
+                        <td colspan="2">C + R</td>	
+                    </tr>
+
+                    <tr style="background-color: #e3dede;">
+                        <td style="color: #b8b8b8; font-weight: bold; text-shadow: 1px 1px 1.5px black;">F</td>
+                        <td>4-</td>
+                        <td>Geral + C</td>
+                        <td colspan="2">Geral + C</td>
+                        <td colspan="2">C</td>
+                    </tr>
+
+                </table>
+                </center>
+
+                <p style="font-size: 92%;">
+                    * <b>Geral</b> inclui qualquer carta que possa aparecer nos Decks Iniciais, Equipamentos Básicos e Magias de Campo.
+                    <br>
+                    * A probabilidade é uniformemente distribuida. Ex: Se o duelista tem 10 URs, cada uma tem 10% de chance de ser escolhida.
+                </p>
+
+                <br>
+
+                <b>Exemplo das Taxas Reais de Drop:</b><br>
+                - Numa vitória de <b>Rank S</b>, as chances para o <b>Drop 3</b> ao enfrentar um duelista que tenha 30 cartas R, 20 SR, 10 UR:<br>
+                
+                <center>
+                <table>
+                    <tr style="background-color: #8a948c; font-weight: bold;">
+                        <td style="width: 100px;">Raridade</td>
+                        <td style="width: 200px;" colspan="2">Caso 20% e Caso 80%</td>
+                        <td style="width: 210px;"><b>CHANCE REAL DE DROP</b></td>
+                    </tr>
+
+                    <tr style="background-color: #e3dede;">
+                        <td style="color: #cb64ed; font-weight: bold; text-shadow: 1px 1px 1.5px black;">UR</td>
+                        <td>0%</td>
+                        <td>33% <a style="color: black; font-size: 66%; vertical-align: middle;">(10/30)</a></td>
+                        <td style="text-align: left; padding-left: 33px; color: red; font-weight: bold;">26% <a style="color: black; font-size: 66%; vertical-align: middle;">(80% x 33%)</a></td>
+                    </tr>
+
+                    <tr style="background-color: #cccccc;">
+                        <td style="color: #ebc959; font-weight: bold; text-shadow: 1px 1px 1.5px black;">SR</td>
+                        <td style="width: 110px;">57% <a style="color: black; font-size: 66%; vertical-align: middle;">(40/70)</a></td>
+                        <td style="width: 110px;">67% <a style="color: black; font-size: 62%; vertical-align: middle;">(20/30)</a></td>
+                        <td style="text-align: left; padding-left: 33px; color: red; font-weight: bold;">64% <a style="color: black; font-size: 66%; vertical-align: middle;">(20% x 57% + 80% x 66%)</a></td>
+                    </tr>
+
+                    <tr style="background-color: #e3dede;">
+                        <td style="color: #5aabe0; font-weight: bold; text-shadow: 1px 1px 1.5px black;">R</td>
+                        <td>43% <a style="color: black; font-size: 66%; vertical-align: middle;">(30/70)</a></td>
+                        <td>0%</td>
+                        <td style="text-align: left; padding-left: 38px; color: red; font-weight: bold;">10%</td>
+                    </tr>
+
+
+                </table>
+                </center>
+
+            </div>
+        
+            <br>
+
+        </div>
+
+        <br>
+        <br>
+
     </section>
     <!-- The update boxes go above here -->
 </body>
